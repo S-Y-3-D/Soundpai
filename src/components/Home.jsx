@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import ahead from "../assets/fast-forward.png"
+import {Link} from "react-router-dom"
 
 
 
@@ -20,7 +21,7 @@ export default function Home(){
             Speak with Clarity & Precision
             Get Real-Time Suggestions &  Feedback
             </h1>
-            <img className="move-to-icon" onMouseOver={handleHoverOn} onMouseOut={handleHoverOut} src={ahead}/>
+            <Link to="/main"><img className="move-to-icon" onMouseOver={handleHoverOn} onMouseOut={handleHoverOut} src={ahead}/></Link>
             {hover && <h5 className="cheesy-text">Leave it to senpai</h5>}
         </div>
     )
