@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  box-sizing: 0;
+}
+.navbar-container{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  margin-left:15px;
+  width:180px;
+}
+.menu{
+  margin-left: auto;
+  margin-right: 15px;
+}
+.home{
+  font-family: 'Century Gothic';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sell-heading{
   text-align: center;
+margin:50px;
+font-weight: 700;
+font-size: 96px;
+color: #0B8793;
 }
+.move-to-icon{
+  width: 150px;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+  transition: 300ms;
+  margin:0;
+  cursor: pointer;
+}
+.move-to-icon:hover{
+  filter:drop-shadow(0px 0px 16px rgba(11,135,147,0.50));
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.cheesy-text{
+  animation: fadeIn 2s; 
+  transform: 300ms;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0B8793;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.cut{
+  text-decoration-line: line-through;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.ocean {
+  height: 30px; /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow-x: hidden;
 }
